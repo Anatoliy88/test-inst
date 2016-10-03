@@ -1,0 +1,94 @@
+doctype html
+html(lang="ru")
+  head
+    title="Заголовок"
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(charset="utf-8")
+    link(href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic", rel="stylesheet")
+    link(rel="stylesheet", href="css/main.min.css")
+  body
+    include header
+
+    .block-about
+      .container
+        h2.about-title
+          | Что именно будет сделано для Вас:
+        h3.about-subtitle
+          strong Наша задача:
+          | Привлечь максимально целевую аудиторию в Ваш бизнес
+          i.sprite.sprite-exclamation_ic
+        ul.about-list
+          li
+            | Проанализируем&nbsp; Ваш&nbsp; текущий &nbsp; аккаунт&nbsp; в &nbsp;Инстаграм &nbsp; и &nbsp;
+            b подготовим к продвижению
+            | &nbsp;(сделаем продающее оформление, дадим рекомендации по контенту и тд).
+            p Если у Вас еще нет аккаунта - мы его сделаем.
+          li
+            | Создадим подробный портрет Целевой Аудитории для Вашего бизнеса. Узнаем их интересы,пол,возраст и тд.
+          li
+            p Запустим рекламную активность по целевой аудитории.
+            p Эти люди будут видеть Ваш аккаунт, кто-то из них будет подписываться на него, переходить на Ваш сайт и покупать Ваши продукты
+    .block-promotion
+      .container
+        h2.promotion-title
+          | Как видите, продвижение будет идти только по целевой аудитории.
+        p.promotion-description
+          span Именно поэтому Вы сможете&nbsp;
+            strong получить прибыль&nbsp;
+          span от нашего продвижения&nbsp;
+            strong максимально быстро
+    .block-rule
+      .container
+        h2.rule-title
+          p Наше правило:
+          p
+            span.blue Только 1 клиент
+          p в 1 Нише
+          i.sprite.sprite-text_decorative
+        .rule-description
+          p Для того, чтобы наши клиенты могли получать максимум прибыли от продвижения,
+          p
+            span.blue мы не продвигаем конкурентов наших существующих клиентов
+    .block-price
+      .container
+        h2.price-title
+          | Сколько стоит продвижение?
+        p.price-subtitle Продвижение Вашего аккаунта “под ключ” стоит всего 3 900 руб в мес
+        .price-description
+          p
+            span Больше ничего доплачивать не потребуется.
+          p
+            |именно за эту сумму Вы получите от 10 000 до 30 000 контактов с Вашей Целевой Аудиторией
+    .block-form
+      .container
+        .block-form--left
+          i.sprite.sprite-text_decorative
+          p.form-text
+            | Просто заполните форму
+            br
+            | и если мы не работаем с Вашим конкурентом, то сможем начать сотрудничать с Вами
+          i.sprite.sprite-text_decorative
+          .form-arrow
+            i.sprite.sprite-arrow
+        .block-form--right
+          form.order
+            input(type="text",placeholder="Ваше имя",name="",value="", required="")
+            input(type="tel",placeholder="Ваш телефон",name="",value="", required="")
+            input(type="email",placeholder="Ваш email",name="",value="", required="")
+            input(type="text",placeholder="Ниша",name="",value="", required="")
+            input(type="text",placeholder="Город",name="",value="", required="")
+            input(type="submit",name="",value="Оформить заказ")
+            a(href="#") Политика конфиденциальности
+    .block-prefooter
+      .container
+        h2.prefooter-title
+          | Остались вопросы?
+        p.prefooter-subtitle
+          | Просто позвоните: 8 800 775 35 37
+
+    include footer
+
+
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
+  script(src="js/libs.min.js")
+  script(src="js/main.min.js")

@@ -1,0 +1,287 @@
+.block-about
+  padding-top: 50px
+  padding-bottom: 40px
+
+.block-about .container
+  padding-left: 65px
+  padding-right: 65px
+
+.about-title,
+.about-subtitle
+  display: inline-block
+  width: 100%
+  text-align: center
+
+.about-title
+  set-font-size(45px)
+  font-family: UbuntuBold
+  margin-top: 0
+  margin-bottom: 25px
+
+.about-subtitle
+  set-font-size(27px)
+  text-align: center
+  font-family: UbuntuMedium
+  margin-top: 0
+  margin-bottom: 15px
+
+  strong
+    set-font-size(32px)
+    font-family: UbuntuBold
+    display: inline-block
+    width: 100%
+  i
+    margin-top: 15px
+
+.about-list
+  list-style: none
+  margin: 0
+  padding: 0
+  padding-left: 130px
+
+.about-list li
+  set-font-size(22px)
+  position: relative
+  font-family: "PT Sans"
+  border-bottom: 1px solid #efefef
+  padding-bottom: 30px
+  padding-top: 30px
+  line-height: 1.2
+
+  &::before
+    content: ''
+    position: absolute
+    width: 89px;
+    height: 89px;
+    background-image: url(../assets/images/sprite.png)
+    background-repeat: no-repeat
+
+
+  &:nth-of-type(1)
+    padding-top: 20px
+    p
+      margin-top: 25px
+      margin-bottom: 5px
+    &:before
+      left: -120px
+      top: 13px
+      background-position: -184px -67px
+
+  &:nth-of-type(2)
+    padding-bottom: 40px
+
+    &:before
+      left: -120px
+      top: 12px
+      background-position: -5px -105px;
+
+  &:nth-of-type(3)
+    padding-top: 35px
+
+    &:before
+      left: -120px
+      top: 33px
+      background-position: -283px -67px;
+
+    p
+      margin: 0
+
+.block-promotion
+  background: url("../assets/images/block_3_bg.jpg") 0 0 no-repeat;
+  background-size: cover
+  color: #FFFFFF
+  text-align: center
+  padding-top: 45px
+  padding-bottom: 50px
+
+.promotion-title
+  set-font-size(40px)
+  padding: 0 65px
+  font-family: UbuntuBold, sans-serif
+  margin: 0
+  margin-bottom: 20px
+
+.promotion-description
+  set-font-size(30px)
+  font-family: "PT Sans", sans-serif
+  margin: 0
+
+.promotion-description span
+  display: inline-block
+  width: 100%
+
+.promotion-description strong
+  color: #ffff00
+
+.block-rule
+  text-align: center
+  padding-top: 40px
+  padding-bottom: 35px
+
+.rule-title
+  set-font-size(39px)
+  font-family: UbuntuBold, sans-serif
+  margin: 0
+
+.rule-title p
+  margin: 0
+  width: 100%
+  display: inline-block
+
+  &:nth-of-type(1)
+    set-font-size(49px)
+    text-transform: uppercase
+
+.rule-title .blue
+  color: #FFFFFF
+  background: #003f95
+  padding: 5px 25px
+  line-height: 1.5
+
+.rule-description
+  set-font-size(23px)
+  font-family:"PT Sans", sans-serif
+
+.rule-description p
+  margin: 0
+
+  &:first-of-type
+    padding: 0 22%
+    margin: 10px
+
+.rule-description .blue
+  color: #FFFFFF
+  background: #003f95
+  font-weight: 700
+  line-height: 1.6
+  padding: 0 10px
+
+.block-price
+  background: url("../assets/images/block_5_bg.png") 0 0 no-repeat;
+  background-size: cover
+  padding-top: 25px
+  padding-bottom: 40px
+  text-align: center
+  font-family: "PT Sans", sans-serif
+
+.price-title
+  set-font-size(48px)
+  color: #ffff00
+  font-family: UbuntuBold, sans-serif
+  margin: 0
+
+.price-subtitle
+  set-font-size(26px)
+  color: #ffffff
+  font-weight: 700
+  margin: 0
+  width: 100%
+  
+.price-description
+  set-font-size(22px)
+
+.price-description span
+  padding: 5px 10px
+  background: #efefef
+  line-height: 35px
+
+.price-description p:nth-of-type(1)
+  margin-top: 30px
+  margin-bottom: 10px
+.price-description p:nth-of-type(2)
+  padding: 0 18%
+  color: #FFFFFF
+  margin: 0
+
+.block-form
+  clearfix()
+  font-family: "PT Sans",sans-serif
+  padding-top: 25px
+  padding-bottom: 40px
+
+.block-form
+  &--left
+    float: left
+    width: 59%
+    text-align: center
+    padding-top: 80px
+  &--right
+    float: left
+    width: 41%
+
+.form-text
+  set-font-size(36px)
+  margin: 25px 0
+  margin-bottom: 30px
+  text-align: center
+  font-weight: 700
+  line-height: 1.2
+
+.form-arrow
+  padding-top: 25px
+  padding-right: 25px
+  text-align: right
+  
+form.order
+  border: 8px solid #2039ad
+  padding: 25px
+  text-align: center
+  max-width: 380px
+
+
+form.order input
+
+  set-font-size(20px)
+  text-align: left
+  width: 100%
+  padding: 12px 15px
+  border: 1px solid #2039ad
+  border-radius: 10px
+  margin-bottom: 19px
+
+  &::placeholder
+    set-font-size(20px)
+    color: #000000
+
+  &:last-of-type
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    cursor: pointer
+    margin-bottom: 15px
+    padding-top: 25px
+    padding-bottom: 25px
+    font-weight: 700
+    font-family: UbuntuBold, sans-serif
+    letter-spacing: .1em
+    border: none
+    background: linear-gradient(to bottom,#e7433c 0%, #dc153c 100%)
+    box-shadow: inset 0 -5px 0 #b5092c, 0 1px 5px rgba(0,0,0,.5)
+    &:hover
+      background: linear-gradient(to top,#e7433c 0%, #dc153c 100%)
+      box-shadow: inset 0 -1px 0 #b5092c, 0 0 0 rgba(0,0,0,.5)
+      text-shadow: 1px 1px 0 #000
+      transition: .3s
+
+form.order a
+  font-size: 1rem
+  text-decoration: none
+  color: #252a31
+
+.block-prefooter
+  padding-top: 25px
+  padding-bottom: 35px
+  background: #EFEFEF
+  background-size: cover
+  text-align: center
+
+.prefooter-title
+  set-font-size(49px)
+  font-family: UbuntuBold, sans-serif
+  margin: 0
+
+.prefooter-subtitle
+  set-font-size(28px)
+  color: #202020
+  margin: 0
+  font-family:"PT Sans",sans-serif;

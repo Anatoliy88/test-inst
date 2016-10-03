@@ -5,8 +5,6 @@
   color: #FFFFFF
   padding-top: 35px
   padding-bottom: 65px
-  padding-left: 25px
-  padding-right: 25px
 
 .main-title
   set-font-size(68px)
@@ -16,10 +14,19 @@
   line-height: .9
   width: 100%
 
+  @media (max-width:480px)
+    set-font-size(48px)
+
+  @media (max-width:480px)
+    set-font-size(40px)
+
 .main-header .subtitle
   border: 6px solid #FFFFFF
   margin: 0 25px
   padding: 0 10%
+
+  @media (max-width:590px)
+    padding: 0 5%
 
 .main-header .subtitle p
   &:nth-of-type(1)
@@ -27,10 +34,17 @@
     margin-top: 25px
     margin-bottom: 15px
     line-height: 1
+
     strong
       font-family: UbuntuBold
       display: inline-block
       width: 100%
+
+    @media (max-width:480px)
+      set-font-size(32px)
+
+    @media (max-width:320px)
+      set-font-size(22px)
 
   &:nth-of-type(2)
     set-font-size(25px)
@@ -38,3 +52,12 @@
     margin-top: 0
     margin-bottom: 35px
     font-family: Tahoma, sans-serif
+
+    @media (max-width:480px)
+      set-font-size(18px)
+
+    @media (max-width:320px)
+      set-font-size(17px)
+
+.logo
+  display: inline-block

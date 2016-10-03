@@ -1,10 +1,18 @@
 .block-about
   padding-top: 50px
   padding-bottom: 40px
+  text-align: center
+
+.block-about i
+  margin-bottom: 15px
 
 .block-about .container
   padding-left: 65px
   padding-right: 65px
+
+
+  @media (max-width:590px)
+    padding: 0 15px
 
 .about-title,
 .about-subtitle
@@ -18,18 +26,30 @@
   margin-top: 0
   margin-bottom: 25px
 
+
+  @media (max-width:480px)
+    set-font-size(30px)
+    margin-bottom: 10px
+
 .about-subtitle
   set-font-size(27px)
   text-align: center
   font-family: UbuntuMedium
   margin-top: 0
-  margin-bottom: 15px
+  margin-bottom: 20px
+
+
+  @media (max-width:480px)
+    set-font-size(18px)
 
   strong
     set-font-size(32px)
     font-family: UbuntuBold
     display: inline-block
     width: 100%
+
+    @media (max-width:480px)
+      set-font-size(24px)
   i
     margin-top: 15px
 
@@ -38,6 +58,10 @@
   margin: 0
   padding: 0
   padding-left: 130px
+  text-align:left
+
+  @media (max-width:480px)
+    padding-left: 0
 
 .about-list li
   set-font-size(22px)
@@ -67,6 +91,16 @@
       top: 13px
       background-position: -184px -67px
 
+      @media (max-width:480px)
+        center()
+        top: 30%
+      @media (max-width:320px)
+        center()
+        top: 25%
+
+    @media (max-width:480px)
+      padding-top: 120px
+
   &:nth-of-type(2)
     padding-bottom: 40px
 
@@ -74,6 +108,13 @@
       left: -120px
       top: 12px
       background-position: -5px -105px;
+
+      @media (max-width:480px)
+        center()
+        top: 30%
+      @media (max-width:320px)
+        center()
+        top: 25%
 
   &:nth-of-type(3)
     padding-top: 35px
@@ -83,8 +124,23 @@
       top: 33px
       background-position: -283px -67px;
 
+      @media (max-width:480px)
+        center()
+        top: 30%
+      @media (max-width:320px)
+        center()
+        top: 25%
+
     p
       margin: 0
+
+    @media (max-width:480px)
+      set-font-size(14px)
+      padding-top: 120px
+
+  @media (max-width:480px)
+    set-font-size(14px)
+    padding-top: 100px
 
 .block-promotion
   background: url("../assets/images/block_3_bg.jpg") 0 0 no-repeat;
@@ -101,10 +157,21 @@
   margin: 0
   margin-bottom: 20px
 
+
+  @media (max-width:480px)
+    set-font-size(30px)
+    padding: 0 15px
+
+  @media (max-width:320px)
+    set-font-size(22px)
+
 .promotion-description
   set-font-size(30px)
   font-family: "PT Sans", sans-serif
   margin: 0
+
+  @media (max-width:480px)
+    set-font-size(20px)
 
 .promotion-description span
   display: inline-block
@@ -123,6 +190,13 @@
   font-family: UbuntuBold, sans-serif
   margin: 0
 
+
+  @media (max-width:480px)
+    set-font-size(30px)
+
+  @media (max-width:320px)
+    set-font-size(22px)
+
 .rule-title p
   margin: 0
   width: 100%
@@ -131,6 +205,12 @@
   &:nth-of-type(1)
     set-font-size(49px)
     text-transform: uppercase
+
+    @media (max-width:480px)
+      set-font-size(40px)
+
+    @media (max-width:320px)
+      set-font-size(28px)
 
 .rule-title .blue
   color: #FFFFFF
@@ -142,12 +222,19 @@
   set-font-size(23px)
   font-family:"PT Sans", sans-serif
 
+  @media (max-width:480px)
+    set-font-size(18px)
+
 .rule-description p
   margin: 0
 
   &:first-of-type
     padding: 0 22%
     margin: 10px
+
+
+    @media (max-width:590px)
+      padding: 0 5%
 
 .rule-description .blue
   color: #FFFFFF
@@ -169,6 +256,11 @@
   color: #ffff00
   font-family: UbuntuBold, sans-serif
   margin: 0
+  @media (max-width:480px)
+    set-font-size(30px)
+
+  @media (max-width:320px)
+    set-font-size(22px)
 
 .price-subtitle
   set-font-size(26px)
@@ -176,9 +268,15 @@
   font-weight: 700
   margin: 0
   width: 100%
+  @media (max-width:480px)
+    set-font-size(22px)
+
   
 .price-description
   set-font-size(22px)
+  @media (max-width:480px)
+    set-font-size(16px)
+
 
 .price-description span
   padding: 5px 10px
@@ -188,10 +286,16 @@
 .price-description p:nth-of-type(1)
   margin-top: 30px
   margin-bottom: 10px
+
+  @media (max-width:320px)
+    set-font-size(14px)
 .price-description p:nth-of-type(2)
   padding: 0 18%
   color: #FFFFFF
   margin: 0
+
+  @media (max-width:320px)
+    padding: 0 5%
 
 .block-form
   clearfix()
@@ -205,9 +309,18 @@
     width: 59%
     text-align: center
     padding-top: 80px
+
+    @media (max-width:590px)
+      width: 100%
+      padding-top: 0
+
   &--right
     float: left
     width: 41%
+
+    @media (max-width:590px)
+      width: 100%
+      text-align: center
 
 .form-text
   set-font-size(36px)
@@ -217,16 +330,37 @@
   font-weight: 700
   line-height: 1.2
 
+  @media (max-width:480px)
+    set-font-size(30px)
+  @media (max-width:320px)
+    set-font-size(22px)
+
+
+.block-form--left i
+
+  @media (max-width:590px)
+    display: none
+
+
+
 .form-arrow
   padding-top: 25px
   padding-right: 25px
   text-align: right
+
+
+  @media (max-width:590px)
+    display: none
   
 form.order
   border: 8px solid #2039ad
   padding: 25px
   text-align: center
   max-width: 380px
+
+
+  @media (max-width:590px)
+    display: inline-block
 
 
 form.order input
@@ -280,8 +414,13 @@ form.order a
   font-family: UbuntuBold, sans-serif
   margin: 0
 
+  @media (max-width:480px)
+    set-font-size(30px)
+
 .prefooter-subtitle
   set-font-size(28px)
   color: #202020
   margin: 0
   font-family:"PT Sans",sans-serif;
+  @media (max-width:480px)
+    set-font-size(18px)
